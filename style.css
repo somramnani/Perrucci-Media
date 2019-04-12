@@ -1,15 +1,250 @@
 
-
-html, body, header, footer{
+/* General Styles
+	 ========================================================================== */ 
+	 
+	 html, body, header, footer{
     height: 100%;
-}
+	 }
+
+	 /* Makes the div in the project section fit the whole screen */
+	 .hero-section{
+		 height: 100%;
+	
+		 background-size: cover;
+	 }
+
+	
 
 
-footer{
-    width:100%;
+  
+
+/* ========================================================================== */ 
+
+
+/* Navigation Styles
+========================================================================== */ 
+	  
+	.nav a{
+		/* font-family:"'Noto Serif JP', sans-serif";  */
+		font-family: 'viktorie' , sans-serif;
+		font-size: 35px;
+		text-transform: normal;
+	}
+
+/* ======================================================================== */ 
+
+
+/* Font Styles
+========================================================================== */ 
+
+/* ======================================================================== */ 
+
+
+
+
+/* Header Styles
+========================================================================== */ 
+
+
+/* ======================================================================== */ 
+
+
+
+/* Video Styles
+========================================================================== */ 
+
+	#myVideo{
+		position: fixed;    
+		top: 50%;
+		left: 50%;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		z-index: -100;
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		transform: translateX(-50%) translateY(-50%);
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		}
+
+		/* About Page Video Background */
+		.overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			opacity: 0.5;
+			z-index: 1;
+		}
+
+		#aboutpagevideo{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			min-width: 100%;
+			min-height: 100%;
+			width: auto;
+			height: auto;
+			z-index: 0;
+			-ms-transform: translateX(-50%) translateY(-50%);
+			-moz-transform: translateX(-50%) translateY(-50%);
+			-webkit-transform: translateX(-50%) translateY(-50%);
+			transform: translateX(-50%) translateY(-50%);
+		}
+
+  	#homepagevideo{
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			min-width: 100%;
+			min-height: 100%;
+			width: auto;
+			height: auto;
+			z-index: 0;
+			-ms-transform: translateX(-50%) translateY(-50%);
+			-moz-transform: translateX(-50%) translateY(-50%);
+			-webkit-transform: translateX(-50%) translateY(-50%);
+			transform: translateX(-50%) translateY(-50%);
+		}
+
+/* =========================================================================*/ 
+
+
+
+
+/* Image Styles
+========================================================================== */ 
+	#logo{
+		display: left;
+		margin: .5%;
+		height: auto;
+		width: 65%;   	
+	}
+
+	#logoPic{
+    height: auto;
+    width: auto;
+    padding-top: 10em;
+    padding-left: 10em;
+	}
+	
+	#projectBackgroundPic{
+		height: 100%;
+		background-image: url("images/projects.jpg");
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	.parralax_3D_Animation, .parralax_neon_video, .parralax_animation  {
+		
+		  /* Full height */
+			height: 100%; 
+
+			/* Create the parallax scrolling effect */
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+
+	}
+
+	.parralax_3D_Animation{
+		background-image: url(images/ScreenGrab.WEB.C4D.jpg);
+	}
+	.parralax_neon_video{
+		background-image: url(images/ScreenGrab.WEB.Train.jpg)
+	}
+
+	.parralax_animation{
+		background-image: url(images/ScreenGrab.WEB.TRAVEL.jpg)
+	} 
+
+
+
+/* ======================================================================== */ 
+
+
+
+/* Footer Styles
+========================================================================== */ 
+
+	footer{
+		width:100%;
     color: white;
-    background-color: black;
-}
+		background-color: black;
+
+	
+		
+	}
+	
+	.footer i{
+		font-size:30px;   
+	}
+
+	.fa-info{
+		padding-right: 10px;
+	}
+
+
+/* ==========================================================================*/
+
+
+
+/* Media Queries Styles
+========================================================================== */ 
+
+	@media only screen 
+		and (max-device-width : 480px){
+   	#myVideo{
+    zoom: -500%;
+   }
+	}
+
+	/* Footer Styling */
+
+	@media only screen and (max-width: 768px) {
+		.footer i{
+			font-size: 20px;
+		}
+
+		#contactus {
+			font-size:20px;
+			text-align:center;
+			float:left;
+		}
+
+		.info{
+			font-size:16px;
+		}
+	
+		#connect{
+			font-size:20px;
+		}
+
+		#footerlogo{
+			width:auto;
+			height: 60px;
+		}
+	}
+	
+	@media (min-width: 700px) {
+		.icon{
+		max-width:200px;
+		margin: 1% auto;
+		padding-top: 5em;
+		}
+	}
+
+/* ==========================================================================*/
+
+
+
 
 
 /* #myVideo {
@@ -22,12 +257,11 @@ footer{
 
 
 #home {
-    position: fixed;
-    
-    top: 250px;
-    color: #f1f1f1;
-    width: 100%;
-    padding: 20px;
+  position: fixed;  
+  top: 250px;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
 }
 
 
@@ -59,54 +293,7 @@ video{
  
    
 } */
-#myNavbar{
-   
 
-}
-
-#myVideo{
-    position: fixed;    
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    
-    }
-
-    #logo{
-        display: left;
-        margin: .5%;
-        height: auto;
-        width: 65%;   
-    }
-
-.nav a{
-    /* font-family:"'Noto Serif JP', sans-serif";  */
-
-    font-family: 'viktorie' , sans-serif;
-    font-size: 35px;
-    text-transform: normal;
-}
-
-
-@media only screen 
-and (max-device-width : 480px){
-   #myVideo{
-     zoom: -500%;
-      
-
-   }
-
-}
 
 
 #intro{
@@ -119,130 +306,27 @@ and (max-device-width : 480px){
 
 }
 
-#projectBackgroundPic{
-    height: 100%;
-    background-image: url("images/projects.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 
-}
 
-#logoPic{
-
-    height: auto;
-    width: auto;
-    padding-top: 10em;
-    padding-left: 10em;
-
-}
 
 #aboutme{
     background-color: white;
 
     padding-top:200px;
     padding-bottom:100px;
-
-}
-
-/* Footer Styling */
-
-.footer i{
-    font-size:30px;
-    
-}
-.fa-info{
-    padding-right: 10px;
-}
-
-@media only screen and (max-width: 768px) {
-    .footer i{
-        font-size: 20px;
-    }
-
-    #contactus {
-        font-size:20px;
-        text-align:center;
-        float:left;
-    }
-    .info{
-        font-size:16px;
-    }
-    
-    #connect{
-        font-size:20px;
-    }
-
-    #footerlogo{
-        width:auto;
-        height: 60px;
-        
-    
-    }
-  
-}
-@media (min-width: 700px) {
-
-.icon{
-    max-width:200px;
-    margin: 1% auto;
-    padding-top: 5em;
-    
- 
-}
 }
 
 
-.projectsCollage{
+
+/* .projectsCollage{ */
     /* background-color: black; */
-}
+/* } */
 
 
 /*Projects Portfolio Page /*
 
 
-/* About Page Video Background */
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0.5;
-  z-index: 1;
-}
-
-#aboutpagevideo{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-  }
-
-  #homepagevideo{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-  }
 
   .center-block {
     display: block;
