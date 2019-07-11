@@ -7,5 +7,7 @@ A website built for a production company.
 - HTML5
 - CSS3
 - Bootstrap
+- Firebase
+  - Deployed on firebase
 
-*Deployed on firebase
+
