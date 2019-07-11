@@ -8,6 +8,6 @@ A website built for a production company.
 - CSS3
 - Bootstrap
 - Firebase
- - Deployed on firebase
+   - Deployed on firebase
 
 
