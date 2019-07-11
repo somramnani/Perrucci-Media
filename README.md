@@ -1,3 +1,8 @@
 # ![](/images/LogoBig.PNG)
 
-Deployed on firebase
+## Tools/Languages Used
+- HTML5
+- CSS3
+- Bootstrap
+
+*Deployed on firebase
