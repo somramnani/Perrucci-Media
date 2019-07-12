@@ -1,7 +1,7 @@
 # ![](/images/LogoBig.PNG)
 
 ## Overview
-A website built for a production company. 
+A simlple website built for a production company. 
 
 ## Tools/Languages Used
 - HTML5
